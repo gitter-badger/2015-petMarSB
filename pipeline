@@ -31,7 +31,7 @@ def diginorm_task(input_files, ksize, htsize, cutoff,
         label = 'normalize_by_median_'
         label += '_'.join(input_files[:5])
         if len(input_files) > 5:
-            label += '_and_' + len(input_files) - 5 + '_more'
+            label += '_and_' + str(len(input_files) - 5) + '_more'
 
     if len(input_files) == 1:
         report_fn = input_files[0] + '.keep.report.txt'
@@ -64,7 +64,7 @@ def filter_abund_task(input_files, ct_file, minabund, coverage, label=None):
         label = 'filter_abund_'
         label += '_'.join(input_files[:5])
         if len(input_files) > 5:
-            label += '_and_' + len(input_files) - 5 + '_more'
+            label += '_and_' + str(len(input_files) - 5) + '_more'
 
     inputs = ' '.join(input_files)
     cmd = 'filter-abund.py -C {minabund} -V -Z {coverage} '\

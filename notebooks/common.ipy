@@ -28,6 +28,9 @@ prefix = config['pipeline']['prefix']
 def wdir(fn=''):
     return os.path.join(os.path.join('../', config['pipeline']['work_dir']), fn)
 
+def figdir(fn=''):
+    return os.path.join('./figures/', fn)
+
 def len_func(fn):
     fn = wdir(fn)
     N = !grep -c ">" {fn}
@@ -39,9 +42,14 @@ resources_df['size'] = resources_df[resources_df.meta_type != 'sample'].filename
 outfmt6 = ['sseqid', 'pident', 'length', 'mismatch', 'gapopen', 'qstart', \
            'qend', 'sstart', 'send', 'evalue', 'bitscore']
 
-sample_df['tissue_c'] = list(Categorical(list(sample_df.tissue)).codes)
-tissue_palette = sns.color_palette('Set3', n_colors=len(sample_df.groupby('tissue_c').count()))
-sample_df['color'] = sample_df.tissue_c.apply(lambda x: tissue_palette[x])
+import warnings
+
+
+with warnings.catch_warnings():
+    warnings.simplefilter("ignore")
+    sample_df['tissue_c'] = list(Categorical(list(sample_df.tissue)).codes)
+    tissue_palette = sns.color_palette('Set3', n_colors=len(sample_df.groupby('tissue_c').count()))
+    sample_df['color'] = sample_df.tissue_c.apply(lambda x: tissue_palette[x])
 
 warnings.filterwarnings("ignore",category=DeprecationWarning)
 warnings.filterwarnings("ignore",category=UserWarning)

@@ -1,0 +1,54 @@
+###### signalp ########################################################333
+
+SignalP 4.0: discriminating signal peptides from transmembrane regions.
+Thomas Nordahl Petersen, S<F8>ren Brunak, Gunnar von Heijne and Henrik Nielsen.
+Nature Methods, 8(10):785-786, 2011.
+
+Identification of prokaryotic and eukaryotic signal peptides and prediction
+of their cleavage sites.
+Henrik Nielsen, Jacob Engelbrecht, S<F8>ren Brunak and Gunnar von Heijne.
+Protein Engineering, 10:1-6, 1997.
+
+###### trinity ########################################################
+
+Grabherr MG, Haas BJ, Yassour M, Levin JZ, Thompson DA, Amit I, Adiconis X, Fan L, Raychowdhury R, Zeng Q, Chen Z, Mauceli E, Hacohen N, Gnirke A, Rhind N, di Palma F, Birren BW, Nusbaum C, Lindblad-Toh K, Friedman N, Regev A. Full-length transcriptome assembly from RNA-seq data without a reference genome. Nat Biotechnol. 2011 May 15;29(7):644-52. doi: 10.1038/nbt.1883. PubMed PMID: 21572440. 
+
+* Trinity:
+Full-length transcriptome assembly from RNA-Seq data without a reference genome.
+Grabherr MG, Haas BJ, Yassour M, Levin JZ, Thompson DA, Amit I, Adiconis X, Fan L,
+Raychowdhury R, Zeng Q, Chen Z, Mauceli E, Hacohen N, Gnirke A, Rhind N, di Palma F,
+Birren BW, Nusbaum C, Lindblad-Toh K, Friedman N, Regev A.
+Nature Biotechnology 29, 644–652 (2011)
+Paper: http://www.nature.com/nbt/journal/v29/n7/full/nbt.1883.html
+Code:  http://trinityrnaseq.sf.net
+
+
+####### trinity performance-tuning #####################################
+
+Henschel R, Lieber M, Wu L, Nista, PM, Haas BJ, LeDuc R. Trinity RNA-Seq assembler performance optimization. XSEDE 2012 Proceedings of the 1st Conference of the Extreme Science and Engineering Discovery Environment: Bridging from the eXtreme to the campus and beyond. ISBN: 978-1-4503-1602-6 doi>10.1145/2335755.2335842. 
+
+######## RSEM ###########################################
+
+* RSEM (for abundance estimation):
+RSEM: accurate transcript quantification from RNA-Seq data with or without a reference genome.
+Bo Li and Colin N Dewey.
+BMC Bioinformatics. 2011; 12: 323.
+Paper: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3163565
+Code: http://deweylab.biostat.wisc.edu/rsem
+
+######## TMHMM #########################################
+
+Anders Krogh and Bjorn Larsson, Gunnar von Heijne, and Erik L.L. Sonnhammer:
+Predicting Transmembrane Protein Topology with a Hidden Markov
+Model: Application to Complete Genomes.
+J. Mol. Biol. 305:567-580, 2001.
+
+and
+
+Erik L.L. Sonnhammer, Gunnar von Heijne, and Anders Krogh:
+A hidden Markov model for predicting transmembrane helices in protein
+sequences.
+In J. Glasgow et al., eds.: Proc. Sixth Int. Conf. on Intelligent
+Systems for Molecular Biology, pages 175-182. AAAI Press, 1998.
+
+

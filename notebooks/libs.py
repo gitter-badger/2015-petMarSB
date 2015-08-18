@@ -15,17 +15,15 @@ from matplotlib_venn import venn2, venn3, venn3_circles
 
 import seaborn as sns
 
-import screed
+from figuremanager import FigManager
 
-from peasoup.plot import FigManager
-from peasoup.plot import plot_dendro
-import peasoup
+import screed
 
 import pandas as pd
 from pandas import Categorical
 import numpy as np
 from numpy.random import rand
-from scipy import stats 
+from scipy import stats
 from scipy.spatial.distance import pdist
 from scipy.spatial.distance import squareform
 import scipy.cluster.hierarchy as sch
